@@ -8,6 +8,10 @@
 #include <string.h>
 #include <fcntl.h>
 #include <malloc.h>
+#include <unistd.h>
+
+buffer* FRAME_BUFFERS;
+unsigned int BUFFER_COUNT;
 
 int open_device(const char* dev_name, int* fd) {
     struct stat st;
@@ -38,7 +42,7 @@ int init_mmap(int fd) {
     struct v4l2_requestbuffers req;
     CLEAR(req);
     req.count = 4;
-    req.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+    req.type = V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE;
     req.memory = V4L2_MEMORY_MMAP;
 
     if(-1 == xioctl(fd, VIDIOC_REQBUFS, &req)) {
@@ -63,19 +67,26 @@ int init_mmap(int fd) {
 
     for(BUFFER_COUNT = 0; BUFFER_COUNT < req.count; ++BUFFER_COUNT) {
         struct v4l2_buffer buf;
+        struct v4l2_plane planes[1];
         CLEAR(buf);
+        CLEAR(planes);
 
-        buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+        buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE;
         buf.memory = V4L2_MEMORY_MMAP;
         buf.index = BUFFER_COUNT;
+        buf.m.planes = planes;
+        buf.length = 1;
 
         if(-1 == xioctl(fd, VIDIOC_QUERYBUF, &buf)) {
             return errnoexit("VIDIOC_QUERYBUF");
         }
 
-        FRAME_BUFFERS[BUFFER_COUNT].length = buf.length;
-        FRAME_BUFFERS[BUFFER_COUNT].start = mmap(NULL, buf.length,
-                PROT_READ | PROT_WRITE, MAP_SHARED, fd, buf.m.offset);
+        FRAME_BUFFERS[BUFFER_COUNT].length = buf.m.planes[0].length;
+        FRAME_BUFFERS[BUFFER_COUNT].start = mmap(NULL /* start anywhere */,
+                              buf.m.planes[0].length,
+                              PROT_READ | PROT_WRITE /* required */,
+                              MAP_SHARED /* recommended */,
+                              fd, buf.m.planes[0].m.mem_offset);
 
         if(MAP_FAILED == FRAME_BUFFERS[BUFFER_COUNT].start) {
             return errnoexit("mmap");
@@ -101,8 +112,9 @@ int init_device(int fd, int width, int height) {
         }
     }
 
-    if(!(cap.capabilities & V4L2_CAP_VIDEO_CAPTURE)) {
-        LOGE("device is not a video capture device");
+    if(!(cap.capabilities & V4L2_CAP_VIDEO_CAPTURE) && 
+        !(cap.capabilities & V4L2_CAP_VIDEO_CAPTURE_MPLANE)) {
+        LOGE("device is not a video capture device, capabilities:0x%x", cap.capabilities);
         return ERROR_LOCAL;
     }
 
@@ -112,10 +124,16 @@ int init_device(int fd, int width, int height) {
     }
 
     CLEAR(cropcap);
-    cropcap.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+    if(cap.capabilities & V4L2_CAP_VIDEO_CAPTURE) {
+        cropcap.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+    }
+    else if (cap.capabilities & V4L2_CAP_VIDEO_CAPTURE_MPLANE) {
+        cropcap.type = V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE;
+    }
+    
 
     if(0 == xioctl(fd, VIDIOC_CROPCAP, &cropcap)) {
-        crop.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+        crop.type = V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE;
         crop.c = cropcap.defrect;
 
         if(-1 == xioctl(fd, VIDIOC_S_CROP, &crop)) {
@@ -129,12 +147,16 @@ int init_device(int fd, int width, int height) {
     }
 
     CLEAR(fmt);
-    fmt.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-
+    if(cap.capabilities & V4L2_CAP_VIDEO_CAPTURE) {
+        fmt.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+    }
+    else if (cap.capabilities & V4L2_CAP_VIDEO_CAPTURE_MPLANE) {
+        fmt.type = V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE;
+    }
+    
     fmt.fmt.pix.width = width;
     fmt.fmt.pix.height = height;
-
-    fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_YUYV;
+    fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_UYVY;
     fmt.fmt.pix.field = V4L2_FIELD_INTERLACED;
 
     if(-1 == xioctl(fd, VIDIOC_S_FMT, &fmt)) {

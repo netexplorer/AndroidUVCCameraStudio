@@ -8,6 +8,8 @@
 #include <errno.h>
 #include <linux/videodev2.h>
 
+extern unsigned int BUFFER_COUNT;
+
 int start_capture(int fd) {
     unsigned int i;
     enum v4l2_buf_type type;
@@ -15,16 +17,19 @@ int start_capture(int fd) {
     for(i = 0; i < BUFFER_COUNT; ++i) {
         struct v4l2_buffer buf;
         CLEAR(buf);
-        buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+        buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE;
         buf.memory = V4L2_MEMORY_MMAP;
         buf.index = i;
+        struct v4l2_plane planes[1];
+        buf.m.planes = planes;
+        buf.length = 1;
 
         if(-1 == xioctl(fd, VIDIOC_QBUF, &buf)) {
             return errnoexit("VIDIOC_QBUF");
         }
     }
 
-    type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+    type = V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE;
     if(-1 == xioctl(fd, VIDIOC_STREAMON, &type)) {
         return errnoexit("VIDIOC_STREAMON");
     }
@@ -36,8 +41,14 @@ int read_frame(int fd, buffer* frame_buffers, int width, int height,
         int* rgb_buffer, int* y_buffer) {
     struct v4l2_buffer buf;
     CLEAR(buf);
-    buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+    buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE;
     buf.memory = V4L2_MEMORY_MMAP;
+
+    if (V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE == buf.type) {
+            struct v4l2_plane planes[1];
+            buf.m.planes = planes;
+            buf.length = 1;
+        }
 
     if(-1 == xioctl(fd, VIDIOC_DQBUF, &buf)) {
         switch(errno) {
@@ -50,8 +61,9 @@ int read_frame(int fd, buffer* frame_buffers, int width, int height,
     }
 
     assert(buf.index < BUFFER_COUNT);
-    yuyv422_to_argb(frame_buffers[buf.index].start, width, height, rgb_buffer,
-            y_buffer);
+   /* yuyv422_to_argb(frame_buffers[buf.index].start, width, height, rgb_buffer,
+            y_buffer); */
+    uyvy422_to_argb(frame_buffers[buf.index].start, width, height, rgb_buffer);
 
     if(-1 == xioctl(fd, VIDIOC_QBUF, &buf)) {
         return errnoexit("VIDIOC_QBUF");
@@ -61,7 +73,7 @@ int read_frame(int fd, buffer* frame_buffers, int width, int height,
 }
 
 int stop_capturing(int fd) {
-    enum v4l2_buf_type type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+    enum v4l2_buf_type type = V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE;
     if(-1 != fd && -1 == xioctl(fd, VIDIOC_STREAMOFF, &type)) {
         return errnoexit("VIDIOC_STREAMOFF");
     }

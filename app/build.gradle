@@ -21,6 +21,7 @@ android {
             moduleName "webcam"
             ldLibs "log"
             ldLibs "jnigraphics"
+	    ldLibs "yuv"
             cFlags "-std=c99"
         }
 

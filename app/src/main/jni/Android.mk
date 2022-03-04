@@ -9,12 +9,17 @@ LOCAL_LDLIBS := \
 	-ljnigraphics \
 
 LOCAL_SRC_FILES := \
-	$(LOCAL_PATH)\capture.c \
-	$(LOCAL_PATH)\util.c \
-	$(LOCAL_PATH)\video_device.c \
-	$(LOCAL_PATH)\webcam.c \
-	$(LOCAL_PATH)\yuv.c \
+	$(LOCAL_PATH)/capture.c \
+	$(LOCAL_PATH)/util.c \
+	$(LOCAL_PATH)/video_device.c \
+	$(LOCAL_PATH)/webcam.c \
+	$(LOCAL_PATH)/yuv.c \
 
 LOCAL_C_INCLUDES += $(LOCAL_PATH)
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/libyuv/include/
+
+LOCAL_SHARED_LIBRARIES += yuv
+
 
 include $(BUILD_SHARED_LIBRARY)
+include $(LOCAL_PATH)/libyuv/Android.mk

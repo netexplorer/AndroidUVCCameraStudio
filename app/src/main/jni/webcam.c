@@ -7,6 +7,9 @@
 #include <android/bitmap.h>
 #include <malloc.h>
 
+extern buffer* FRAME_BUFFERS;
+extern int YUV_TABLE[5][256];
+
 void Java_com_ford_openxc_webcam_webcam_NativeWebcam_loadNextFrame(JNIEnv* env,
         jobject thiz, jobject bitmap) {
     AndroidBitmapInfo info;
@@ -48,11 +51,13 @@ jint Java_com_ford_openxc_webcam_webcam_NativeWebcam_startCamera(JNIEnv* env,
     int result = open_device(dev_name, &DEVICE_DESCRIPTOR);
     (*env)->ReleaseStringUTFChars(env, deviceName, dev_name);
     if(result == ERROR_LOCAL) {
+        LOGE("open device:%s return:%d", dev_name, result);
         return result;
     }
 
     result = init_device(DEVICE_DESCRIPTOR, width, height);
     if(result == ERROR_LOCAL) {
+        LOGE("init device failed");
         return result;
     }
 

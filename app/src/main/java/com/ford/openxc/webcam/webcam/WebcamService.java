@@ -62,7 +62,7 @@ public class WebcamService extends Service {
     }
 
     public Bitmap getFrame() {
-/*        if (mWebcam == null) {
+/*      if (mWebcam == null) {
             return null;
         }*/
 

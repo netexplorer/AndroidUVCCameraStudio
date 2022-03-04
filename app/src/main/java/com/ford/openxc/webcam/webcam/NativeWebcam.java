@@ -10,8 +10,8 @@ import java.io.File;
 public class NativeWebcam implements IWebcam {
 
     private static String TAG = "NativeWebcam";
-    private static final int DEFAULT_IMAGE_WIDTH = 640;
-    private static final int DEFAULT_IMAGE_HEIGHT = 480;
+    private static final int DEFAULT_IMAGE_WIDTH = 1920;
+    private static final int DEFAULT_IMAGE_HEIGHT = 1080;
 
     private Bitmap mBitmap;
     private int mWidth;
@@ -26,6 +26,7 @@ public class NativeWebcam implements IWebcam {
 
     static {
         System.loadLibrary("webcam");
+        System.loadLibrary("yuv");
     }
 
     public NativeWebcam(String deviceName, int width, int height) {
