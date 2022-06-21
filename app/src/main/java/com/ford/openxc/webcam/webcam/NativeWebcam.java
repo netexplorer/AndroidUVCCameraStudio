@@ -2,6 +2,7 @@ package com.ford.openxc.webcam.webcam;
 
 import android.graphics.Bitmap;
 import android.util.Log;
+import java.util.ArrayList;
 
 //import com.socks.library.KLog;
 
@@ -10,19 +11,19 @@ import java.io.File;
 public class NativeWebcam implements IWebcam {
 
     private static String TAG = "NativeWebcam";
-    private static final int DEFAULT_IMAGE_WIDTH = 1920;
-    private static final int DEFAULT_IMAGE_HEIGHT = 1080;
+    private static final int DEFAULT_IMAGE_WIDTH = 1280;
+    private static final int DEFAULT_IMAGE_HEIGHT = 720;
 
     private Bitmap mBitmap;
     private int mWidth;
     private int mHeight;
+    private long mhandle;
 
-
-    private native int startCamera(String deviceName, int width, int height);
+    private native long startCamera(String deviceName, int width, int height);
     private native void processCamera();
-    private native boolean cameraAttached();
-    private native void stopCamera();
-    private native void loadNextFrame(Bitmap bitmap);
+    private native boolean cameraAttached(long handle);
+    private native void stopCamera(long handle);
+    private native void loadNextFrame(Bitmap bitmap, long handle);
 
     static {
         System.loadLibrary("webcam");
@@ -52,7 +53,7 @@ public class NativeWebcam implements IWebcam {
                 try {
                     Process su = Runtime.getRuntime().exec("/system/xbin/su");
                     String cmd = "";
-                    for (int i = 0; i < 2; ++i)
+                    for (int i = 0; i < 5; ++i)
                         cmd += String.format("chmod 777 dev/video%d\n", i);
                     cmd += "exit\n";
                     su.getOutputStream().write(cmd.getBytes(), 0, cmd.getBytes().length);
@@ -75,20 +76,20 @@ public class NativeWebcam implements IWebcam {
 
         if(deviceReady) {
             Log.w(TAG, "Preparing camera with device name " + deviceName);
-            startCamera(deviceName, width, height);
+            mhandle = startCamera(deviceName, width, height);
         }
     }
 
     public Bitmap getFrame() {
-        loadNextFrame(mBitmap);
+        loadNextFrame(mBitmap, mhandle);
         return mBitmap;
     }
 
     public void stop() {
-        stopCamera();
+        stopCamera(mhandle);
     }
 
     public boolean isAttached() {
-        return cameraAttached();
+        return cameraAttached(mhandle);
     }
 }

@@ -14,7 +14,9 @@
 
 #define ERROR_LOCAL -1
 #define SUCCESS_LOCAL 0
-
+#ifdef __cplusplus
+extern "C" {
+#endif /* __cplusplus */
 int errnoexit(const char *s);
 
 /* Private: Repeat an ioctl call until it completes and is not interrupted by a
@@ -29,5 +31,10 @@ int errnoexit(const char *s);
  * Returns the status of the ioctl when it completes.
  */
 int xioctl(int fd, int request, void *arg);
+
+#ifdef __cplusplus
+}
+#endif /* __cplusplus */
+
 
 #endif // __UTIL__H__

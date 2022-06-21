@@ -3,59 +3,74 @@
 
 #include <jni.h>
 #include <stdio.h>
+#include <string>
+#include <memory>
+#include <vector>
+#include <set>
+#include <map>
 
-typedef struct {
-    void* start;
-    size_t length;
-} buffer;
+class DeviceInfo {
+public:
+    struct buffer{
+        void* start;
+        size_t length;
+    };
 
 
-/* Private: Open the video device at the named device node.
- *
- * dev_name - the path to a device, e.g. /dev/video0
- * fd - an output parameter to store the file descriptor once opened.
- *
- * Returns SUCCESS_LOCAL if the device was found and opened and ERROR_LOCAL if
- * an error occurred.
- */
-int open_device(const char* dev_name, int* fd);
+public:
+    explicit DeviceInfo(const char *name);
+    virtual ~DeviceInfo();
 
-/* Private: Initialize memory mapped buffers for video frames.
- *
- * fd - a valid file descriptor pointing to the camera device.
- *
- * Returns SUCCESS_LOCAL if no errors, otherwise ERROR_LOCAL.
- */
-int init_mmap(int fd);
+    /* Private: Open the video device at the named device node.
+    *
+    * Returns SUCCESS_LOCAL if the device was found and opened and ERROR_LOCAL if
+    * an error occurred.
+    */
+    int open_device();
 
-/* Private: Initialize video device with the given frame size.
- *
- * Initializes the device as a video capture device (must support V4L2) and
- * checks to make sure it has the streaming I/O interface. Configures the device
- * to crop the image to the given dimensions and initailizes a memory mapped
- * frame buffer.
- *
- * fd - a valid file descriptor to the device.
- * width - the desired width for the output images.
- * height - the desired height for the output images.
- *
- * Returns SUCCESS_LOCAL if no errors, otherwise ERROR_LOCAL.
- */
-int init_device(int fd, int width, int height);
+    /* Private: Initialize memory mapped buffers for video frames.
+    *
+    * fd - a valid file descriptor pointing to the camera device.
+    *
+    * Returns SUCCESS_LOCAL if no errors, otherwise ERROR_LOCAL.
+    */
+    int init_mmap();
 
-/* Private: Unmap and free memory-mapped frame buffers from the device.
- *
- * Returns SUCCESS_LOCAL if no errors, otherwise ERROR_LOCAL.
- */
-int uninit_device();
+    /* Private: Initialize video device with the given frame size.
+    *
+    * Initializes the device as a video capture device (must support V4L2) and
+    * checks to make sure it has the streaming I/O interface. Configures the device
+    * to crop the image to the given dimensions and initailizes a memory mapped
+    * frame buffer.
+    *
+    * width - the desired width for the output images.
+    * height - the desired height for the output images.
+    *
+    * Returns SUCCESS_LOCAL if no errors, otherwise ERROR_LOCAL.
+    */
+    int init_device(int width, int height);
 
-/* Private: Close a file descriptor.
- *
- * fd - a pointer to the descriptor to close, which will be set to -1 on success
- *      or fail.
- *
- * Returns SUCCESS_LOCAL if no errors, otherwise ERROR_LOCAL.
- */
-int close_device(int* fd);
+    /* Private: Unmap and free memory-mapped frame buffers from the device.
+    *
+    * Returns SUCCESS_LOCAL if no errors, otherwise ERROR_LOCAL.
+    */
+    int uninit_device();
+
+    /* Private: Close a file descriptor.
+    *
+    *
+    * Returns SUCCESS_LOCAL if no errors, otherwise ERROR_LOCAL.
+    */
+    int close_device();
+
+protected:
+    int mfd;
+    int mWidth;
+    int mHeight;
+    int mBuffCount;
+    std::string mDeviceName;
+    struct buffer *frame_buffers;
+    //typedef std::map<int, string> DeviceMap;
+};
 
 #endif // __VIDEO_DEVICE_H__

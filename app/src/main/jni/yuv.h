@@ -3,24 +3,9 @@
 
 #include <jni.h>
 #include <stdio.h>
-
-
-/* Public: Generate and cache the lookup table necessary to convert from YUV to
- * ARGB.
- */
-void cache_yuv_lookup_table(int table[5][256]);
-
-/* Private: Convert an Y'UV42 image to an ARGB image.
- *
- * src - the source image buffer.
- * width - the width of the image.
- * height - the height of the image.
- * rgb_buffer - output buffer for RGB data from the conversion.
- * y_buffer - output buffer for alpha (Y) data from the conversion.
- */
-void yuyv422_to_argb(unsigned char *src, int width, int height, int* rgb_buffer,
-        int* y_buffer);
-
+#ifdef __cplusplus
+extern "C" {
+#endif /* __cplusplus */
 /* Private: Convert an UYVY422 image to an ARGB image.
  *
  * src - the source image buffer.
@@ -29,5 +14,7 @@ void yuyv422_to_argb(unsigned char *src, int width, int height, int* rgb_buffer,
  * rgb_buffer - output buffer for RGB data from the conversion.
  */
 void uyvy422_to_argb(unsigned char *src, int width, int height, int *rgb_buffer);
-
+#ifdef __cplusplus
+}
+#endif /* __cplusplus */
 #endif // __YUV__H__

@@ -8,13 +8,20 @@
 #include <errno.h>
 #include <linux/videodev2.h>
 
-extern unsigned int BUFFER_COUNT;
+Capture::Capture(const char *name):DeviceInfo(name), rgb_buffer(nullptr), y_buffer(nullptr)
+{
+}
 
-int start_capture(int fd) {
+Capture::~Capture()
+{
+}
+
+
+int Capture::start_capture() {
     unsigned int i;
     enum v4l2_buf_type type;
 
-    for(i = 0; i < BUFFER_COUNT; ++i) {
+    for(i = 0; i < mBuffCount; ++i) {
         struct v4l2_buffer buf;
         CLEAR(buf);
         buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE;
@@ -24,21 +31,31 @@ int start_capture(int fd) {
         buf.m.planes = planes;
         buf.length = 1;
 
-        if(-1 == xioctl(fd, VIDIOC_QBUF, &buf)) {
+        if(-1 == xioctl(mfd, VIDIOC_QBUF, &buf)) {
             return errnoexit("VIDIOC_QBUF");
         }
     }
 
     type = V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE;
-    if(-1 == xioctl(fd, VIDIOC_STREAMON, &type)) {
+    if(-1 == xioctl(mfd, VIDIOC_STREAMON, &type)) {
         return errnoexit("VIDIOC_STREAMON");
+    }
+
+    int area = mWidth * mHeight;
+    if (rgb_buffer == nullptr) 
+        rgb_buffer = new int[area];
+    if (y_buffer == nullptr) 
+        y_buffer = new int[area];
+
+    if (rgb_buffer == nullptr || y_buffer == nullptr) {
+        return errnoexit("Malloc RGB buffer");
     }
 
     return SUCCESS_LOCAL;
 }
 
-int read_frame(int fd, buffer* frame_buffers, int width, int height,
-        int* rgb_buffer, int* y_buffer) {
+int Capture::read_frame(int width, int height)
+{
     struct v4l2_buffer buf;
     CLEAR(buf);
     buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE;
@@ -50,7 +67,7 @@ int read_frame(int fd, buffer* frame_buffers, int width, int height,
             buf.length = 1;
         }
 
-    if(-1 == xioctl(fd, VIDIOC_DQBUF, &buf)) {
+    if(-1 == xioctl(mfd, VIDIOC_DQBUF, &buf)) {
         switch(errno) {
             case EAGAIN:
                 return 0;
@@ -60,43 +77,44 @@ int read_frame(int fd, buffer* frame_buffers, int width, int height,
         }
     }
 
-    assert(buf.index < BUFFER_COUNT);
+    assert(buf.index < mBuffCount);
    /* yuyv422_to_argb(frame_buffers[buf.index].start, width, height, rgb_buffer,
             y_buffer); */
-    uyvy422_to_argb(frame_buffers[buf.index].start, width, height, rgb_buffer);
+    uyvy422_to_argb((unsigned char *)frame_buffers[buf.index].start, width, height, rgb_buffer);
 
-    if(-1 == xioctl(fd, VIDIOC_QBUF, &buf)) {
+    if(-1 == xioctl(mfd, VIDIOC_QBUF, &buf)) {
         return errnoexit("VIDIOC_QBUF");
     }
 
     return 1;
 }
 
-int stop_capturing(int fd) {
+int Capture::stop_capturing()
+{
     enum v4l2_buf_type type = V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE;
-    if(-1 != fd && -1 == xioctl(fd, VIDIOC_STREAMOFF, &type)) {
+    if(-1 != mfd && -1 == xioctl(mfd, VIDIOC_STREAMOFF, &type)) {
         return errnoexit("VIDIOC_STREAMOFF");
     }
 
     return SUCCESS_LOCAL;
 }
 
-void process_camera(int fd, buffer* frame_buffers, int width,
-        int height, int* rgb_buffer, int* ybuf) {
-    if(fd == -1) {
+void Capture::process_camera(int width, int height) {
+    if(mfd == -1) {
+        errnoexit("Invalid handle.....");
         return;
     }
 
     for(;;) {
         fd_set fds;
         FD_ZERO(&fds);
-        FD_SET(fd, &fds);
+        FD_SET(mfd, &fds);
 
         struct timeval tv;
         tv.tv_sec = 2;
         tv.tv_usec = 0;
 
-        int result = select(fd + 1, &fds, NULL, NULL, &tv);
+        int result = select(mfd + 1, &fds, NULL, NULL, &tv);
         if(-1 == result) {
             if(EINTR == errno) {
                 continue;
@@ -106,22 +124,22 @@ void process_camera(int fd, buffer* frame_buffers, int width,
             LOGE("select timeout");
         }
 
-        if(read_frame(fd, frame_buffers, width, height, rgb_buffer, ybuf) == 1) {
+        if(read_frame(width, height) == 1) {
             break;
         }
     }
 }
 
-void stop_camera(int* fd, int* rgb_buffer, int* y_buffer) {
-    stop_capturing(*fd);
+void Capture::stop_camera() {
+    stop_capturing();
     uninit_device();
-    close_device(fd);
+    close_device();
 
     if(rgb_buffer) {
-        free(rgb_buffer);
+        delete[] rgb_buffer;
     }
 
     if(y_buffer) {
-        free(y_buffer);
+        delete[] y_buffer;
     }
 }

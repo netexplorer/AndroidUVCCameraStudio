@@ -3,6 +3,10 @@
 #include <errno.h>
 #include <string.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif /* __cplusplus */
+
 int errnoexit(const char *s) {
     LOGE("%s error %d, %s", s, errno, strerror(errno));
     return ERROR_LOCAL;
@@ -17,3 +21,6 @@ int xioctl(int fd, int request, void *arg) {
 
     return r;
 }
+#ifdef __cplusplus
+}
+#endif /* __cplusplus */

@@ -10,26 +10,32 @@
 #include <malloc.h>
 #include <unistd.h>
 
-buffer* FRAME_BUFFERS;
-unsigned int BUFFER_COUNT;
+DeviceInfo::DeviceInfo(const char *name): mDeviceName(name), mfd(-1),
+            mBuffCount(4), frame_buffers(nullptr),
+            mWidth(1920), mHeight(1080)
+{
+}
 
-int open_device(const char* dev_name, int* fd) {
+DeviceInfo::~DeviceInfo()
+{}
+
+int DeviceInfo::open_device() {
     struct stat st;
-    if(-1 == stat(dev_name, &st)) {
-        LOGE("Cannot identify '%s': %d, %s", dev_name, errno, strerror(errno));
+    if(-1 == stat(mDeviceName.c_str(), &st)) {
+        LOGE("Cannot identify '%s': %d, %s", mDeviceName.c_str(), errno, strerror(errno));
         return ERROR_LOCAL;
     }
 
     if(!S_ISCHR(st.st_mode)) {
-        LOGE("%s is not a valid device", dev_name);
+        LOGE("%s is not a valid device", mDeviceName.c_str());
         return ERROR_LOCAL;
     }
 
-    *fd = open(dev_name, O_RDWR | O_NONBLOCK, 0);
-    if(-1 == *fd) {
-        LOGE("Cannot open '%s': %d, %s", dev_name, errno, strerror(errno));
+    mfd = open(mDeviceName.c_str(), O_RDWR | O_NONBLOCK, 0);
+    if(-1 == mfd) {
+        LOGE("Cannot open '%s': %d, %s", mDeviceName.c_str(), errno, strerror(errno));
         if(EACCES == errno) {
-            LOGE("Insufficient permissions on '%s': %d, %s", dev_name, errno,
+            LOGE("Insufficient permissions on '%s': %d, %s", mDeviceName.c_str(), errno,
                     strerror(errno));
         }
         return ERROR_LOCAL;
@@ -38,14 +44,14 @@ int open_device(const char* dev_name, int* fd) {
     return SUCCESS_LOCAL;
 }
 
-int init_mmap(int fd) {
+int DeviceInfo::init_mmap() {
     struct v4l2_requestbuffers req;
     CLEAR(req);
     req.count = 4;
     req.type = V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE;
     req.memory = V4L2_MEMORY_MMAP;
 
-    if(-1 == xioctl(fd, VIDIOC_REQBUFS, &req)) {
+    if(-1 == xioctl(mfd, VIDIOC_REQBUFS, &req)) {
         if(EINVAL == errno) {
             LOGE("device does not support memory mapping");
             return ERROR_LOCAL;
@@ -58,14 +64,17 @@ int init_mmap(int fd) {
         LOGE("Insufficient buffer memory");
         return ERROR_LOCAL;
     }
-
-    FRAME_BUFFERS = calloc(req.count, sizeof(*FRAME_BUFFERS));
-    if(!FRAME_BUFFERS) {
-        LOGE("Out of memory");
-        return ERROR_LOCAL;
+    if (frame_buffers == nullptr) {
+       // frame_buffers = calloc(req.count, sizeof(*frame_buffers));
+        frame_buffers = new struct buffer[req.count];
+        if(!frame_buffers) {
+            LOGE("Out of memory");
+            return ERROR_LOCAL;
+        }
     }
 
-    for(BUFFER_COUNT = 0; BUFFER_COUNT < req.count; ++BUFFER_COUNT) {
+
+    for(mBuffCount = 0; mBuffCount < req.count; ++mBuffCount) {
         struct v4l2_buffer buf;
         struct v4l2_plane planes[1];
         CLEAR(buf);
@@ -73,22 +82,22 @@ int init_mmap(int fd) {
 
         buf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE;
         buf.memory = V4L2_MEMORY_MMAP;
-        buf.index = BUFFER_COUNT;
+        buf.index = mBuffCount;
         buf.m.planes = planes;
         buf.length = 1;
 
-        if(-1 == xioctl(fd, VIDIOC_QUERYBUF, &buf)) {
+        if(-1 == xioctl(mfd, VIDIOC_QUERYBUF, &buf)) {
             return errnoexit("VIDIOC_QUERYBUF");
         }
 
-        FRAME_BUFFERS[BUFFER_COUNT].length = buf.m.planes[0].length;
-        FRAME_BUFFERS[BUFFER_COUNT].start = mmap(NULL /* start anywhere */,
+        frame_buffers[mBuffCount].length = buf.m.planes[0].length;
+        frame_buffers[mBuffCount].start = mmap(NULL /* start anywhere */,
                               buf.m.planes[0].length,
                               PROT_READ | PROT_WRITE /* required */,
                               MAP_SHARED /* recommended */,
-                              fd, buf.m.planes[0].m.mem_offset);
+                              mfd, buf.m.planes[0].m.mem_offset);
 
-        if(MAP_FAILED == FRAME_BUFFERS[BUFFER_COUNT].start) {
+        if(MAP_FAILED == frame_buffers[mBuffCount].start) {
             return errnoexit("mmap");
         }
     }
@@ -96,14 +105,16 @@ int init_mmap(int fd) {
     return SUCCESS_LOCAL;
 }
 
-int init_device(int fd, int width, int height) {
+int DeviceInfo::init_device(int width, int height) {
     struct v4l2_capability cap;
     struct v4l2_cropcap cropcap;
     struct v4l2_crop crop;
     struct v4l2_format fmt;
     unsigned int min;
+    mWidth = width;
+    mHeight = height;
 
-    if(-1 == xioctl(fd, VIDIOC_QUERYCAP, &cap)) {
+    if(-1 == xioctl(mfd, VIDIOC_QUERYCAP, &cap)) {
         if(EINVAL == errno) {
             LOGE("not a valid V4L2 device");
             return ERROR_LOCAL;
@@ -132,11 +143,11 @@ int init_device(int fd, int width, int height) {
     }
     
 
-    if(0 == xioctl(fd, VIDIOC_CROPCAP, &cropcap)) {
+    if(0 == xioctl(mfd, VIDIOC_CROPCAP, &cropcap)) {
         crop.type = V4L2_BUF_TYPE_VIDEO_CAPTURE_MPLANE;
         crop.c = cropcap.defrect;
 
-        if(-1 == xioctl(fd, VIDIOC_S_CROP, &crop)) {
+        if(-1 == xioctl(mfd, VIDIOC_S_CROP, &crop)) {
             switch(errno) {
                 case EINVAL:
                     break;
@@ -157,9 +168,9 @@ int init_device(int fd, int width, int height) {
     fmt.fmt.pix.width = width;
     fmt.fmt.pix.height = height;
     fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_UYVY;
-    fmt.fmt.pix.field = V4L2_FIELD_INTERLACED;
+    fmt.fmt.pix.field = V4L2_FIELD_NONE;
 
-    if(-1 == xioctl(fd, VIDIOC_S_FMT, &fmt)) {
+    if(-1 == xioctl(mfd, VIDIOC_S_FMT, &fmt)) {
         return errnoexit("VIDIOC_S_FMT");
     }
 
@@ -173,26 +184,26 @@ int init_device(int fd, int width, int height) {
         fmt.fmt.pix.sizeimage = min;
     }
 
-    return init_mmap(fd);
+    return init_mmap();
 }
 
-int uninit_device() {
-    for(unsigned int i = 0; i < BUFFER_COUNT; ++i) {
-        if(-1 == munmap(FRAME_BUFFERS[i].start, FRAME_BUFFERS[i].length)) {
+int DeviceInfo::uninit_device() {
+    for(unsigned int i = 0; i < mBuffCount; ++i) {
+        if(-1 == munmap(frame_buffers[i].start, frame_buffers[i].length)) {
             return errnoexit("munmap");
         }
     }
 
-    free(FRAME_BUFFERS);
+    delete[] frame_buffers;
     return SUCCESS_LOCAL;
 }
 
-int close_device(int* fd) {
+int DeviceInfo::close_device() {
     int result = SUCCESS_LOCAL;
-    if(-1 != *fd && -1 == close(*fd)) {
+    if(-1 != mfd && -1 == close(mfd)) {
         result = errnoexit("close");
     }
-    *fd = -1;
+    mfd = -1;
     return result;
 }
 

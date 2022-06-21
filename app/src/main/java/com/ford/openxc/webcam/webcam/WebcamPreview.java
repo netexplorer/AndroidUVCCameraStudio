@@ -24,19 +24,20 @@ public class WebcamPreview extends SurfaceView implements
     private final Object mServiceSyncToken = new Object();
     private WebcamService mWebcamService;
     private SurfaceHolder mHolder;
-
+    private int index;
     public WebcamPreview(Context context) {
         super(context);
-        init();
+
     }
 
     public WebcamPreview(Context context, AttributeSet attrs) {
         super(context, attrs);
-        init();
+
     }
 
-    private void init() {
+    public void init(int index) {
         Log.w(TAG, "WebcamPreview constructed");
+        this.index = index;
         setFocusable(true);
 
         mHolder = getHolder();
@@ -75,8 +76,22 @@ public class WebcamPreview extends SurfaceView implements
                         break;
                     }
                 }
+                Bitmap bitmap = null;
+                switch (index){
+                    case 1:
+                         bitmap = mWebcamService.getFrame();
+                        break;
+                    case 2:
+                        bitmap = mWebcamService.getFrame2();
+                        break;
+                    case 3:
+                        bitmap = mWebcamService.getFrame3();
+                        break;
+                    case 4:
+                        bitmap = mWebcamService.getFrame4();
+                        break;
+                }
 
-                Bitmap bitmap = mWebcamService.getFrame();
                 Canvas canvas = mHolder.lockCanvas();
                 if(canvas != null) {
                     drawOnCanvas(canvas, bitmap);
