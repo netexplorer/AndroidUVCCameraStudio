@@ -1,0 +1,5 @@
+{
+  "ndkDirProperty": "/home/dev/toolchain/android-ndk-r23b/",
+  "sdkFolder": "/home/dev/stub/android_root",
+  "sideBySideNdkFolderNames": []
+}

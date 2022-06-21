@@ -4,14 +4,14 @@
   "buildSettings": {
     "environmentVariables": []
   },
-  "cxxBuildFolder": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\.cxx\\ndkBuild\\x86Debug\\x86",
+  "cxxBuildFolder": "/home/builder/work/demo/AndroidUVCCameraStudio/app/.cxx/ndkBuild/x86Debug/x86",
   "info": {
     "abi": "X86",
     "bitness": 32,
     "deprecated": false,
     "default": true
   },
-  "originalCxxBuildFolder": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\.cxx\\ndkBuild\\x86Debug\\x86",
+  "originalCxxBuildFolder": "/home/builder/work/demo/AndroidUVCCameraStudio/app/.cxx/ndkBuild/x86Debug/x86",
   "variant": {
     "buildSystemArgumentList": [],
     "buildTargetSet": [],
@@ -21,20 +21,20 @@
     "isDebuggableEnabled": true,
     "module": {
       "buildSystem": "NDK_BUILD",
-      "cmakeToolchainFile": "D:\\SDK\\AndroidStudioSDK\\Sdk\\ndk\\21.3.6528147\\build\\cmake\\android.toolchain.cmake",
-      "cxxFolder": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\.cxx",
+      "cmakeToolchainFile": "/home/builder/work/toolchain/android-ndk-r23b/build/cmake/android.toolchain.cmake",
+      "cxxFolder": "/home/builder/work/demo/AndroidUVCCameraStudio/app/.cxx",
       "gradleModulePathName": ":app",
-      "intermediatesFolder": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\build\\intermediates",
-      "makeFile": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\Android.mk",
-      "moduleBuildFile": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\build.gradle",
-      "moduleRootFolder": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app",
+      "intermediatesFolder": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates",
+      "makeFile": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk",
+      "moduleBuildFile": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build.gradle",
+      "moduleRootFolder": "/home/builder/work/demo/AndroidUVCCameraStudio/app",
       "ndkDefaultAbiList": [
         "ARMEABI_V7A",
         "ARM64_V8A",
         "X86",
         "X86_64"
       ],
-      "ndkFolder": "D:\\SDK\\AndroidStudioSDK\\Sdk\\ndk\\21.3.6528147",
+      "ndkFolder": "/home/builder/work/toolchain/android-ndk-r23b",
       "ndkMetaAbiList": [
         {
           "abi": "ARMEABI_V7A",
@@ -63,7 +63,7 @@
       ],
       "ndkMetaPlatforms": {
         "min": 16,
-        "max": 30,
+        "max": 31,
         "aliases": {
           "20": 19,
           "25": 24,
@@ -80,7 +80,8 @@
           "O-MR1": 27,
           "P": 28,
           "Q": 29,
-          "R": 30
+          "R": 30,
+          "S": 31
         }
       },
       "ndkSupportedAbiList": [
@@ -90,37 +91,37 @@
         "X86_64"
       ],
       "ndkDefaultStl": "SYSTEM",
-      "ndkVersion": "21.3.6528147",
+      "ndkVersion": "23.1.7779620",
       "project": {
-        "compilerSettingsCacheFolder": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\.cxx",
-        "cxxFolder": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\.cxx",
+        "compilerSettingsCacheFolder": "/home/builder/work/demo/AndroidUVCCameraStudio/.cxx",
+        "cxxFolder": "/home/builder/work/demo/AndroidUVCCameraStudio/.cxx",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
-        "rootBuildGradleFolder": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo",
-        "sdkFolder": "D:\\SDK\\AndroidStudioSDK\\Sdk",
+        "rootBuildGradleFolder": "/home/builder/work/demo/AndroidUVCCameraStudio",
+        "sdkFolder": "/home/builder/work/toolchain/android_sdk",
         "isPrefabEnabled": false
       },
       "splitsAbiFilterSet": [],
       "stlSharedObjectMap": {
         "LIBCXX_SHARED": {
-          "ARMEABI_V7A": "D:\\SDK\\AndroidStudioSDK\\Sdk\\ndk\\21.3.6528147\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\arm-linux-androideabi\\libc++_shared.so",
-          "ARM64_V8A": "D:\\SDK\\AndroidStudioSDK\\Sdk\\ndk\\21.3.6528147\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\aarch64-linux-android\\libc++_shared.so",
-          "X86": "D:\\SDK\\AndroidStudioSDK\\Sdk\\ndk\\21.3.6528147\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\i686-linux-android\\libc++_shared.so",
-          "X86_64": "D:\\SDK\\AndroidStudioSDK\\Sdk\\ndk\\21.3.6528147\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\x86_64-linux-android\\libc++_shared.so"
+          "ARMEABI_V7A": "/home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/libc++_shared.so",
+          "ARM64_V8A": "/home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so",
+          "X86": "/home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/i686-linux-android/libc++_shared.so",
+          "X86_64": "/home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/libc++_shared.so"
         },
         "LIBCXX_STATIC": {},
         "NONE": {},
         "SYSTEM": {}
       }
     },
-    "objFolder": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\build\\intermediates\\ndkBuild\\x86Debug\\obj\\local",
+    "objFolder": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local",
     "variantName": "x86Debug",
     "validAbiList": [
       "X86"
     ],
-    "prefabDirectory": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\.cxx\\ndkBuild\\x86Debug\\prefab",
+    "prefabDirectory": "/home/builder/work/demo/AndroidUVCCameraStudio/app/.cxx/ndkBuild/x86Debug/prefab",
     "prefabPackageDirectoryList": []
   },
-  "prefabFolder": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\.cxx\\ndkBuild\\x86Debug\\prefab\\x86"
+  "prefabFolder": "/home/builder/work/demo/AndroidUVCCameraStudio/app/.cxx/ndkBuild/x86Debug/prefab/x86"
 }

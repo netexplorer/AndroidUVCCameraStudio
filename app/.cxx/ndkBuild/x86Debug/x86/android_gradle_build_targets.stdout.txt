@@ -1,0 +1,3 @@
+Android NDK: WARNING: Invalid LOCAL_CPP_EXTENSION values: cpp    
+make: Nothing to be done for 'webcam'.
+make: Nothing to be done for 'yuv'.

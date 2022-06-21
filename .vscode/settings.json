@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "**/linux-4.19/source": true,
+        "capture.h": "c"
+    }
+}

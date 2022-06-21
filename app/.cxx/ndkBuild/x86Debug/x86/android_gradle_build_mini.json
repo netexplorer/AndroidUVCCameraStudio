@@ -1,18 +1,319 @@
 {
   "buildFiles": [
-    "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\Android.mk",
-    "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\Application.mk"
+    "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk",
+    "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk"
   ],
   "cleanCommands": [
-    "D:\\SDK\\AndroidStudioSDK\\Sdk\\ndk\\21.3.6528147\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003dD:/John_Projects/Github/AndroidUVCCameraSamples/AndroidUVCCameraDemo/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003dD:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\build\\intermediates\\ndkBuild\\x86Debug\\lib clean"
+    "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib clean"
   ],
-  "buildTargetsCommand": "D:\\SDK\\AndroidStudioSDK\\Sdk\\ndk\\21.3.6528147\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003dD:/John_Projects/Github/AndroidUVCCameraSamples/AndroidUVCCameraDemo/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003dD:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\build\\intermediates\\ndkBuild\\x86Debug\\lib {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
+    "rotate_argb-x86Debug-source": {
+      "artifactName": "rotate_argb",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/rotate_argb.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/rotate_argb.o",
+      "runtimeFiles": []
+    },
+    "rotate-x86Debug-source": {
+      "artifactName": "rotate",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/rotate.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/rotate.o",
+      "runtimeFiles": []
+    },
+    "rotate_win-x86Debug-source": {
+      "artifactName": "rotate_win",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/rotate_win.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/rotate_win.o",
+      "runtimeFiles": []
+    },
+    "row_win-x86Debug-source": {
+      "artifactName": "row_win",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/row_win.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/row_win.o",
+      "runtimeFiles": []
+    },
+    "compare_neon64-x86Debug-source": {
+      "artifactName": "compare_neon64",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/compare_neon64.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/compare_neon64.o",
+      "runtimeFiles": []
+    },
+    "scale_win-x86Debug-source": {
+      "artifactName": "scale_win",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale_win.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale_win.o",
+      "runtimeFiles": []
+    },
+    "convert_argb-x86Debug-source": {
+      "artifactName": "convert_argb",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/convert_argb.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/convert_argb.o",
+      "runtimeFiles": []
+    },
+    "rotate_msa-x86Debug-source": {
+      "artifactName": "rotate_msa",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/rotate_msa.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/rotate_msa.o",
+      "runtimeFiles": []
+    },
+    "convert_from_argb-x86Debug-source": {
+      "artifactName": "convert_from_argb",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/convert_from_argb.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/convert_from_argb.o",
+      "runtimeFiles": []
+    },
+    "scale_neon64-x86Debug-source": {
+      "artifactName": "scale_neon64",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale_neon64.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale_neon64.o",
+      "runtimeFiles": []
+    },
+    "compare_win-x86Debug-source": {
+      "artifactName": "compare_win",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/compare_win.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/compare_win.o",
+      "runtimeFiles": []
+    },
+    "row_neon-x86Debug-source": {
+      "artifactName": "row_neon",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/row_neon.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/row_neon.o",
+      "runtimeFiles": []
+    },
+    "row_neon64-x86Debug-source": {
+      "artifactName": "row_neon64",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/row_neon64.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/row_neon64.o",
+      "runtimeFiles": []
+    },
+    "scale_common-x86Debug-source": {
+      "artifactName": "scale_common",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale_common.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale_common.o",
+      "runtimeFiles": []
+    },
+    "convert_to_i420-x86Debug-source": {
+      "artifactName": "convert_to_i420",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/convert_to_i420.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/convert_to_i420.o",
+      "runtimeFiles": []
+    },
+    "scale_any-x86Debug-source": {
+      "artifactName": "scale_any",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale_any.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale_any.o",
+      "runtimeFiles": []
+    },
+    "scale_msa-x86Debug-source": {
+      "artifactName": "scale_msa",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale_msa.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale_msa.o",
+      "runtimeFiles": []
+    },
+    "scale_gcc-x86Debug-source": {
+      "artifactName": "scale_gcc",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale_gcc.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale_gcc.o",
+      "runtimeFiles": []
+    },
+    "compare_gcc-x86Debug-source": {
+      "artifactName": "compare_gcc",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/compare_gcc.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/compare_gcc.o",
+      "runtimeFiles": []
+    },
     "webcam-x86Debug-x86": {
       "artifactName": "webcam",
-      "buildCommand": "D:\\SDK\\AndroidStudioSDK\\Sdk\\ndk\\21.3.6528147\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003dD:/John_Projects/Github/AndroidUVCCameraSamples/AndroidUVCCameraDemo/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003dD:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\build\\intermediates\\ndkBuild\\x86Debug\\lib D:/John_Projects/Github/AndroidUVCCameraSamples/AndroidUVCCameraDemo/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/libwebcam.so",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/libwebcam.so",
       "abi": "x86",
-      "output": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\build\\intermediates\\ndkBuild\\x86Debug\\obj\\local\\x86\\libwebcam.so",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/libwebcam.so",
+      "runtimeFiles": []
+    },
+    "convert_from-x86Debug-source": {
+      "artifactName": "convert_from",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/convert_from.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/convert_from.o",
+      "runtimeFiles": []
+    },
+    "convert_to_argb-x86Debug-source": {
+      "artifactName": "convert_to_argb",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/convert_to_argb.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/convert_to_argb.o",
+      "runtimeFiles": []
+    },
+    "scale_uv-x86Debug-source": {
+      "artifactName": "scale_uv",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale_uv.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale_uv.o",
+      "runtimeFiles": []
+    },
+    "compare_msa-x86Debug-source": {
+      "artifactName": "compare_msa",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/compare_msa.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/compare_msa.o",
+      "runtimeFiles": []
+    },
+    "row_common-x86Debug-source": {
+      "artifactName": "row_common",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/row_common.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/row_common.o",
+      "runtimeFiles": []
+    },
+    "scale_argb-x86Debug-source": {
+      "artifactName": "scale_argb",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale_argb.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale_argb.o",
+      "runtimeFiles": []
+    },
+    "scale_neon-x86Debug-source": {
+      "artifactName": "scale_neon",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale_neon.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale_neon.o",
+      "runtimeFiles": []
+    },
+    "convert-x86Debug-source": {
+      "artifactName": "convert",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/convert.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/convert.o",
+      "runtimeFiles": []
+    },
+    "scale-x86Debug-source": {
+      "artifactName": "scale",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/scale.o",
+      "runtimeFiles": []
+    },
+    "cpu_id-x86Debug-source": {
+      "artifactName": "cpu_id",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/cpu_id.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/cpu_id.o",
+      "runtimeFiles": []
+    },
+    "rotate_neon64-x86Debug-source": {
+      "artifactName": "rotate_neon64",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/rotate_neon64.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/rotate_neon64.o",
+      "runtimeFiles": []
+    },
+    "rotate_common-x86Debug-source": {
+      "artifactName": "rotate_common",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/rotate_common.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/rotate_common.o",
+      "runtimeFiles": []
+    },
+    "yuv-x86Debug-x86": {
+      "artifactName": "yuv",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/libyuv.so",
+      "abi": "x86",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/libyuv.so",
+      "runtimeFiles": []
+    },
+    "compare_common-x86Debug-source": {
+      "artifactName": "compare_common",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/compare_common.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/compare_common.o",
+      "runtimeFiles": []
+    },
+    "planar_functions-x86Debug-source": {
+      "artifactName": "planar_functions",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/planar_functions.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/planar_functions.o",
+      "runtimeFiles": []
+    },
+    "rotate_any-x86Debug-source": {
+      "artifactName": "rotate_any",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/rotate_any.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/rotate_any.o",
+      "runtimeFiles": []
+    },
+    "row_msa-x86Debug-source": {
+      "artifactName": "row_msa",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/row_msa.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/row_msa.o",
+      "runtimeFiles": []
+    },
+    "rotate_gcc-x86Debug-source": {
+      "artifactName": "rotate_gcc",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/rotate_gcc.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/rotate_gcc.o",
+      "runtimeFiles": []
+    },
+    "row_gcc-x86Debug-source": {
+      "artifactName": "row_gcc",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/row_gcc.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/row_gcc.o",
+      "runtimeFiles": []
+    },
+    "compare-x86Debug-source": {
+      "artifactName": "compare",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/compare.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/compare.o",
+      "runtimeFiles": []
+    },
+    "rotate_neon-x86Debug-source": {
+      "artifactName": "rotate_neon",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/rotate_neon.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/rotate_neon.o",
+      "runtimeFiles": []
+    },
+    "row_any-x86Debug-source": {
+      "artifactName": "row_any",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/row_any.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/row_any.o",
+      "runtimeFiles": []
+    },
+    "compare_neon-x86Debug-source": {
+      "artifactName": "compare_neon",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/compare_neon.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/compare_neon.o",
+      "runtimeFiles": []
+    },
+    "video_common-x86Debug-source": {
+      "artifactName": "video_common",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/video_common.o",
+      "abi": "source",
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86Debug/obj/local/x86/objs-debug/yuv_static/source/video_common.o",
       "runtimeFiles": []
     }
   }

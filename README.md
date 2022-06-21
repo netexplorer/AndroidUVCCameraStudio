@@ -16,3 +16,7 @@ Example for Android UVCCamera. It works on Android phone and pad via USB OTG if 
 ## Forked from jameskkk/AndroidUVCCameraStudio
 
 ### support V4L2 multiplanar preview
+
+
+commond:
+	gradle build

@@ -1,50 +1,608 @@
 {
   "buildFiles": [
-    "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\Android.mk",
-    "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\Application.mk"
+    "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk",
+    "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk"
   ],
   "cleanCommands": [
-    "D:\\SDK\\AndroidStudioSDK\\Sdk\\ndk\\21.3.6528147\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003dD:/John_Projects/Github/AndroidUVCCameraSamples/AndroidUVCCameraDemo/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003dD:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\build\\intermediates\\ndkBuild\\x86_64Debug\\lib clean"
+    "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib clean"
   ],
-  "buildTargetsCommand": "D:\\SDK\\AndroidStudioSDK\\Sdk\\ndk\\21.3.6528147\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003dD:/John_Projects/Github/AndroidUVCCameraSamples/AndroidUVCCameraDemo/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003dD:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\build\\intermediates\\ndkBuild\\x86_64Debug\\lib {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
+    "planar_functions-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/planar_functions.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "planar_functions",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/planar_functions.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/planar_functions.o"
+    },
+    "rotate_gcc-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/rotate_gcc.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "rotate_gcc",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/rotate_gcc.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/rotate_gcc.o"
+    },
+    "compare-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/compare.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "compare",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/compare.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/compare.o"
+    },
+    "compare_msa-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/compare_msa.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "compare_msa",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/compare_msa.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/compare_msa.o"
+    },
+    "convert-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/convert.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "convert",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/convert.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/convert.o"
+    },
+    "convert_from-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/convert_from.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "convert_from",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/convert_from.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/convert_from.o"
+    },
+    "rotate_common-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/rotate_common.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "rotate_common",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/rotate_common.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/rotate_common.o"
+    },
+    "rotate_neon-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/rotate_neon.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "rotate_neon",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/rotate_neon.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/rotate_neon.o"
+    },
+    "scale_neon-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale_neon.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "scale_neon",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/scale_neon.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale_neon.o"
+    },
+    "rotate-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/rotate.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "rotate",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/rotate.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/rotate.o"
+    },
+    "row_common-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/row_common.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "row_common",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/row_common.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/row_common.o"
+    },
+    "scale-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "scale",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/scale.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale.o"
+    },
+    "convert_from_argb-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/convert_from_argb.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "convert_from_argb",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/convert_from_argb.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/convert_from_argb.o"
+    },
+    "row_gcc-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/row_gcc.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "row_gcc",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/row_gcc.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/row_gcc.o"
+    },
+    "convert_to_i420-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/convert_to_i420.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "convert_to_i420",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/convert_to_i420.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/convert_to_i420.o"
+    },
+    "scale_any-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale_any.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "scale_any",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/scale_any.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale_any.o"
+    },
+    "convert_argb-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/convert_argb.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "convert_argb",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/convert_argb.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/convert_argb.o"
+    },
+    "cpu_id-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/cpu_id.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "cpu_id",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/cpu_id.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/cpu_id.o"
+    },
+    "scale_argb-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale_argb.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "scale_argb",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/scale_argb.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale_argb.o"
+    },
+    "rotate_neon64-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/rotate_neon64.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "rotate_neon64",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/rotate_neon64.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/rotate_neon64.o"
+    },
+    "row_neon64-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/row_neon64.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "row_neon64",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/row_neon64.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/row_neon64.o"
+    },
+    "video_common-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/video_common.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "video_common",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/video_common.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/video_common.o"
+    },
+    "rotate_any-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/rotate_any.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "rotate_any",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/rotate_any.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/rotate_any.o"
+    },
+    "row_neon-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/row_neon.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "row_neon",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/row_neon.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/row_neon.o"
+    },
+    "row_any-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/row_any.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "row_any",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/row_any.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/row_any.o"
+    },
+    "rotate_msa-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/rotate_msa.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "rotate_msa",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/rotate_msa.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/rotate_msa.o"
+    },
+    "row_msa-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/row_msa.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "row_msa",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/row_msa.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/row_msa.o"
+    },
+    "yuv-x86_64Debug-x86_64": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/libyuv.so",
+      "toolchain": "toolchain-x86_64",
+      "abi": "x86_64",
+      "artifactName": "yuv",
+      "files": [],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/libyuv.so"
+    },
+    "compare_neon64-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/compare_neon64.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "compare_neon64",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/compare_neon64.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/compare_neon64.o"
+    },
+    "compare_neon-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/compare_neon.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "compare_neon",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/compare_neon.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/compare_neon.o"
+    },
+    "compare_common-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/compare_common.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "compare_common",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/compare_common.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/compare_common.o"
+    },
+    "scale_neon64-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale_neon64.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "scale_neon64",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/scale_neon64.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale_neon64.o"
+    },
+    "compare_gcc-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/compare_gcc.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "compare_gcc",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/compare_gcc.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/compare_gcc.o"
+    },
+    "compare_win-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/compare_win.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "compare_win",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/compare_win.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/compare_win.o"
+    },
+    "scale_common-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale_common.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "scale_common",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/scale_common.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale_common.o"
+    },
+    "scale_uv-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale_uv.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "scale_uv",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/scale_uv.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale_uv.o"
+    },
+    "scale_win-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale_win.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "scale_win",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/scale_win.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale_win.o"
+    },
     "webcam-x86_64Debug-x86_64": {
-      "buildCommand": "D:\\SDK\\AndroidStudioSDK\\Sdk\\ndk\\21.3.6528147\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003dD:/John_Projects/Github/AndroidUVCCameraSamples/AndroidUVCCameraDemo/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003dD:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\build\\intermediates\\ndkBuild\\x86_64Debug\\lib D:/John_Projects/Github/AndroidUVCCameraSamples/AndroidUVCCameraDemo/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/libwebcam.so",
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/libwebcam.so",
       "toolchain": "toolchain-x86_64",
       "abi": "x86_64",
       "artifactName": "webcam",
       "files": [
         {
-          "src": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\capture.c",
-          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot D:/SDK/AndroidStudioSDK/Sdk/ndk/21.3.6528147/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fPIC -O0 -UNDEBUG -fno-limit-debug-info -ID:/John_Projects/Github/AndroidUVCCameraSamples/AndroidUVCCameraDemo/app/src/main/jni -ID:/John_Projects/Github/AndroidUVCCameraSamples/AndroidUVCCameraDemo/app/src/main/jni -DANDROID -std\u003dc99 -nostdinc++ -Wformat -Werror\u003dformat-security"
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/capture.cpp",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include/ -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -std\u003dc++11 -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
         },
         {
-          "src": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\util.c",
-          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot D:/SDK/AndroidStudioSDK/Sdk/ndk/21.3.6528147/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fPIC -O0 -UNDEBUG -fno-limit-debug-info -ID:/John_Projects/Github/AndroidUVCCameraSamples/AndroidUVCCameraDemo/app/src/main/jni -ID:/John_Projects/Github/AndroidUVCCameraSamples/AndroidUVCCameraDemo/app/src/main/jni -DANDROID -std\u003dc99 -nostdinc++ -Wformat -Werror\u003dformat-security"
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/util.cpp",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include/ -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -std\u003dc++11 -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
         },
         {
-          "src": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\video_device.c",
-          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot D:/SDK/AndroidStudioSDK/Sdk/ndk/21.3.6528147/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fPIC -O0 -UNDEBUG -fno-limit-debug-info -ID:/John_Projects/Github/AndroidUVCCameraSamples/AndroidUVCCameraDemo/app/src/main/jni -ID:/John_Projects/Github/AndroidUVCCameraSamples/AndroidUVCCameraDemo/app/src/main/jni -DANDROID -std\u003dc99 -nostdinc++ -Wformat -Werror\u003dformat-security"
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/video_device.cpp",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include/ -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -std\u003dc++11 -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
         },
         {
-          "src": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\webcam.c",
-          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot D:/SDK/AndroidStudioSDK/Sdk/ndk/21.3.6528147/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fPIC -O0 -UNDEBUG -fno-limit-debug-info -ID:/John_Projects/Github/AndroidUVCCameraSamples/AndroidUVCCameraDemo/app/src/main/jni -ID:/John_Projects/Github/AndroidUVCCameraSamples/AndroidUVCCameraDemo/app/src/main/jni -DANDROID -std\u003dc99 -nostdinc++ -Wformat -Werror\u003dformat-security"
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/webcam.cpp",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include/ -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -std\u003dc++11 -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
         },
         {
-          "src": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\src\\main\\jni\\yuv.c",
-          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot D:/SDK/AndroidStudioSDK/Sdk/ndk/21.3.6528147/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fPIC -O0 -UNDEBUG -fno-limit-debug-info -ID:/John_Projects/Github/AndroidUVCCameraSamples/AndroidUVCCameraDemo/app/src/main/jni -ID:/John_Projects/Github/AndroidUVCCameraSamples/AndroidUVCCameraDemo/app/src/main/jni -DANDROID -std\u003dc99 -nostdinc++ -Wformat -Werror\u003dformat-security"
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/yuv.cpp",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include/ -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -std\u003dc++11 -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
         }
       ],
-      "output": "D:\\John_Projects\\Github\\AndroidUVCCameraSamples\\AndroidUVCCameraDemo\\app\\build\\intermediates\\ndkBuild\\x86_64Debug\\obj\\local\\x86_64\\libwebcam.so"
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/libwebcam.so"
+    },
+    "convert_to_argb-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/convert_to_argb.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "convert_to_argb",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/convert_to_argb.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/convert_to_argb.o"
+    },
+    "rotate_argb-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/rotate_argb.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "rotate_argb",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/rotate_argb.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/rotate_argb.o"
+    },
+    "rotate_win-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/rotate_win.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "rotate_win",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/rotate_win.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/rotate_win.o"
+    },
+    "scale_gcc-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale_gcc.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "scale_gcc",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/scale_gcc.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale_gcc.o"
+    },
+    "row_win-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/row_win.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "row_win",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/row_win.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/row_win.o"
+    },
+    "scale_msa-x86_64Debug-source": {
+      "buildCommand": "/home/builder/work/toolchain/android-ndk-r23b/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj NDK_LIBS_OUT\u003d/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/lib /home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale_msa.o",
+      "toolchain": "toolchain-source",
+      "abi": "source",
+      "artifactName": "scale_msa",
+      "files": [
+        {
+          "src": "/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/source/scale_msa.cc",
+          "flags": "-target x86_64-none-linux-android21 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fno-exceptions -fno-rtti -fPIC -O0 -UNDEBUG -fno-limit-debug-info -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++/include -I/home/builder/work/toolchain/android-ndk-r23b/sources/cxx-stl/llvm-libc++abi/include -I/home/builder/work/demo/AndroidUVCCameraStudio/app/src/main/jni/libyuv -std\u003dc++11 -frtti -fexceptions -pie -fPIE -fPIC -DANDROID -Wall -fexceptions -nostdinc++ -Wformat -Werror\u003dformat-security -fno-strict-aliasing -fexceptions"
+        }
+      ],
+      "output": "/home/builder/work/demo/AndroidUVCCameraStudio/app/build/intermediates/ndkBuild/x86_64Debug/obj/local/x86_64/objs-debug/yuv_static/source/scale_msa.o"
     }
   },
   "toolchains": {
     "toolchain-x86_64": {
-      "cCompilerExecutable": "D:\\SDK\\AndroidStudioSDK\\Sdk\\ndk\\21.3.6528147\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
+      "cppCompilerExecutable": "/home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+    },
+    "toolchain-source": {
+      "cppCompilerExecutable": "/home/builder/work/toolchain/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
     }
   },
-  "cFileExtensions": [
-    "c"
-  ],
-  "cppFileExtensions": []
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cc",
+    "cpp"
+  ]
 }

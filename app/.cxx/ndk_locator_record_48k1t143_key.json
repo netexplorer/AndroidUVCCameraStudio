@@ -1,0 +1,5 @@
+{
+  "ndkDirProperty": "/home/dev/toolchain/android-ndk-r23b/",
+  "sdkFolder": "/home/dev/stub/rockchip/RK356X_Android11.0/sdk",
+  "sideBySideNdkFolderNames": []
+}

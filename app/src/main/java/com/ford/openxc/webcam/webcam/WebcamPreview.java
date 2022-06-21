@@ -39,7 +39,6 @@ public class WebcamPreview extends SurfaceView implements
         Log.w(TAG, "WebcamPreview constructed");
         this.index = index;
         setFocusable(true);
-
         mHolder = getHolder();
         mHolder.addCallback(this);
     }

@@ -1,0 +1,52 @@
+Android NDK: WARNING: Invalid LOCAL_CPP_EXTENSION values: cpp    
+[armeabi-v7a] Compile++ thumb: webcam <= capture.cpp
+[armeabi-v7a] Compile++ thumb: webcam <= util.cpp
+[armeabi-v7a] Compile++ thumb: webcam <= video_device.cpp
+[armeabi-v7a] Compile++ thumb: webcam <= webcam.cpp
+[armeabi-v7a] Compile++ thumb: webcam <= yuv.cpp
+[armeabi-v7a] Compile++ thumb: yuv_static <= compare.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= compare_common.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= compare_gcc.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= compare_msa.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= compare_neon.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= compare_neon64.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= compare_win.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= convert.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= convert_argb.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= convert_from.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= convert_from_argb.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= convert_to_argb.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= convert_to_i420.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= cpu_id.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= planar_functions.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= rotate.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= rotate_any.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= rotate_argb.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= rotate_common.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= rotate_gcc.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= rotate_msa.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= rotate_neon.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= rotate_neon64.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= rotate_win.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= row_any.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= row_common.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= row_gcc.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= row_msa.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= row_neon.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= row_neon64.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= row_win.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= scale.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= scale_any.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= scale_argb.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= scale_common.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= scale_gcc.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= scale_msa.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= scale_neon.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= scale_neon64.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= scale_uv.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= scale_win.cc
+[armeabi-v7a] Compile++ thumb: yuv_static <= video_common.cc
+[armeabi-v7a] StaticLibrary  : libyuv_static.a
+[armeabi-v7a] SharedLibrary  : libyuv.so
+[armeabi-v7a] SharedLibrary  : libwebcam.so
+make: Nothing to be done for 'yuv'.
